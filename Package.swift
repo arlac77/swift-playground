@@ -7,7 +7,7 @@ let package = Package(
     name: "swift-playground",
     dependencies: [
         .package(url: "https://github.com/apple/swift-system", from: "0.0.1"),
-        .package(url: "https://github.com/apple/swift-algorithms", from: "0.0.1"),
+        .package(url: "https://github.com/apple/swift-algorithms", from: "0.0.2"),
     ],
     targets: [
         .target(
