@@ -9,5 +9,4 @@ jobs:
         uses: actions/checkout@master
       - name: Build and test
         run: |
-          swift --version
-          swift build
+          swift run
