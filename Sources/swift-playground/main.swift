@@ -10,3 +10,10 @@ let fd = try FileDescriptor.open(
 try fd.closeAfter {
   _ = try fd.writeAll(message.utf8)
 }
+
+import Algorithms
+
+let numbers = [10, 20, 30]
+for perm in numbers.permutations() {
+    print(perm)
+}

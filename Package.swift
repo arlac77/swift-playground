@@ -7,12 +7,14 @@ let package = Package(
     name: "swift-playground",
     dependencies: [
         .package(url: "https://github.com/apple/swift-system", from: "0.0.1"),
+        .package(url: "https://github.com/apple/swift-algorithms", from: "0.0.1"),
     ],
     targets: [
         .target(
             name: "swift-playground",
             dependencies: [
             .product(name: "SystemPackage", package: "swift-system"),
+            .product(name: "Algorithms", package: "swift-algorithms"),
         ]),
         .testTarget(
             name: "swift-playgroundTests",
