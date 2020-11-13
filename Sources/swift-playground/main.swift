@@ -17,3 +17,16 @@ let numbers = [10, 20, 30]
 for perm in numbers.permutations() {
     print(perm)
 }
+
+func swap<T>(a: inout T, b: inout T)
+{
+  let x = a
+  a = b
+  b = x
+}
+
+var a = 1
+var b = 2
+swap(&a,&b)
+print(a)
+print(b)
